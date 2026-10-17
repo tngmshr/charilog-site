@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="charilog-version" content="2b24a4ebb07f423490e15f6eb8d6e59f63870ac50c398164786cb718b5427c83">
+  <meta name="theme-color" content="#10231e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="チャリログ">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://tile.openstreetmap.org; connect-src 'self' https://overpass-api.de https://nominatim.openstreetmap.org; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>チャリログを開く</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./img/icons/apple-touch-icon.png">
+  <link rel="icon" href="./img/icons/icon-192.png" type="image/png">
+  <link rel="stylesheet" href="./lock.css?v=2b24a4ebb07f423490e15f6eb8d6e59f63870ac50c398164786cb718b5427c83">
+  <script type="module" src="./lock.js?v=2b24a4ebb07f423490e15f6eb8d6e59f63870ac50c398164786cb718b5427c83"></script>
+</head>
+<body><main>
+  <h1>チャリログ</h1>
+  <p>パスワードを入力して開いてください。更新後はもう一度入力が必要です。</p>
+  <p>一度開いた端末では、次回からオフラインでも使えます。共有の端末では、使い終わったら設定でロックし直してください。</p>
+  <form id="lock-form">
+    <label for="password">パスワード</label>
+    <input id="password" type="password" autocomplete="current-password" required disabled>
+    <button id="unlock" type="submit" disabled>開く</button>
+  </form>
+  <p id="lock-status" role="status" aria-live="polite">準備しています…</p>
+  <button id="retry" type="button" hidden>再試行</button>
+  <noscript>JavaScript を有効にしてください。</noscript>
+</main></body>
+</html>
