@@ -1,5 +1,5 @@
 // 暗号化公開版専用。開発用 sw.js は変更しない。
-const VERSION = '2b24a4ebb07f423490e15f6eb8d6e59f63870ac50c398164786cb718b5427c83';
+const VERSION = '4a1ecbefe2431b2ac30d0a011253873b9fbd10dbc39b8250d54cc0fae083c6ed';
 const BASE = self.registration.scope;
 const PREFIX = `charilog-locked:${encodeURIComponent(new URL(BASE).pathname)}:`;
 const SHELL = `${PREFIX}shell:${VERSION}`, APP = `${PREFIX}app:${VERSION}`;
